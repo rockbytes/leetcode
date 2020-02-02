@@ -27,9 +27,6 @@ public:
         
         deque<string> toVisit{beginWord};
         
-        // A flag to indicate if the endWord is found. If found, then stop doing BFS.
-        bool foundEndWord = false;
-        
         while (!toVisit.empty()) {
             // Remove from wordSet the words which has already been visited.
             // It not only speeds up the searching, but also saves us from using "visited" 
@@ -41,11 +38,11 @@ public:
                 auto word = toVisit.front();
                 if (word == endWord) {
                     calculateLadder(word, parents, ladder, ladders);
-                    foundEndWord = true;
+                    return ladders;
                 }
                 
                 toVisit.pop_front();             
-                if (!foundEndWord) calculateWordsToVisit(word, wordSet, parents, toVisit);
+                calculateWordsToVisit(word, wordSet, parents, toVisit);
             }
         }
         
