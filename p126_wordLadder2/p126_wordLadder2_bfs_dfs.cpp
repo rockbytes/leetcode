@@ -9,7 +9,8 @@ using namespace::std;
 class Solution {
 public:
     vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {
-        // Use BFS to find the endWord; meanwhile build a map to hold all possible paths (ladders)
+        // Use BFS to find the endWord; meanwhile build a map to hold all possible paths (ladders),
+        // then use DFS to build ladders (answer) from the map.
 
         vector<vector<string>> ladders;
         
