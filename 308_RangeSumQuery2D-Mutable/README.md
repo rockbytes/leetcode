@@ -8,7 +8,7 @@ Implement the `NumMatrix` class:
 - `int sumRegion(int row1, int col1, int row2, int col2)` returns the sum of the elements of the `matrix` array inside the rectangle defined by its upper left corner `(row1, col1)` and lower right corner `(row2, col2)`.
 
 ### Example
-https://www.geeksforgeeks.org/two-dimensional-binary-indexed-tree-or-fenwick-tree/
+https://github.com/rockbytes/leetcode/blob/master/308_RangeSumQuery2D-Mutable/summut-grid.jpg
 
 **Input**
 <br/>
@@ -19,3 +19,5 @@ https://www.geeksforgeeks.org/two-dimensional-binary-indexed-tree-or-fenwick-tre
 **Output**
 <br />
 [null, 8, null, 10]
+
+https://www.geeksforgeeks.org/two-dimensional-binary-indexed-tree-or-fenwick-tree/
