@@ -1,3 +1,11 @@
+// Complexity:
+// - Time: O(m*n*logm*logn), where m is the number of rows and n is the number of columns
+// - Space: O(m*n)
+//
+// Improvement:
+// - The data member _matrix in class NumMatrix is not need. The current value can be calculate by: 
+//   _tree[row+1][col+1] - _tree[row][col+1] - _tree[row+1][col] + _tree[row][col]
+
 class BinaryIndexedTree2D {
 public:
     BinaryIndexedTree2D(const vector<vector<int>> &matrix) {
